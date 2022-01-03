@@ -1,0 +1,56 @@
+This is a simple example of rest-api
+
+the url_prefix api is: /app/v1/
+It count with some endpoints which are:
+
+---
+
+This endpoint is used to create an account
+
+method: post
+host:port/app/v1/signup
+info:
+json with:
+username
+email
+password
+
+---
+
+---
+
+This endpoint is used to login in the api
+
+method: get
+host:port/app/v1/login
+info:
+json with:
+email
+password
+
+method: get,patch
+host:port/app/v1/user
+
+---
+
+---
+
+This endpoint is used to show the list of users
+
+method: get
+info:
+args with:
+token
+
+This endpoint is used to update the user information
+
+method: patch
+info:
+args with:
+token
+json with:
+username
+email
+password
+
+---
